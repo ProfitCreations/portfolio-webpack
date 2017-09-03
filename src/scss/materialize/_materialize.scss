@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 // Mixins
-@import "../../../node_modules/materialize-css/sass/components/mixins";
-@import "../../../node_modules/materialize-css/sass/components/color";
+// @import "../../../node_modules/materialize-css/sass/components/mixins";
+@import "_colors.scss";
 
 // Variables;
 @import "../../../node_modules/materialize-css/sass/components/variables";
@@ -16,7 +16,7 @@
 @import "../../../node_modules/materialize-css/sass/components/icons-material-design";
 // @import "../../../node_modules/materialize-css/sass/components/grid";
 @import "../../../node_modules/materialize-css/sass/components/navbar";
-@import "../../../node_modules/materialize-css/sass/components/roboto";
+// @import "../../../node_modules/materialize-css/sass/components/roboto";
 @import "../../../node_modules/materialize-css/sass/components/typography";
 @import "../../../node_modules/materialize-css/sass/components/transitions";
 @import "../../../node_modules/materialize-css/sass/components/cards";

@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "Portfolio Project",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --open --config webpack.common.js",
+    "prod": "webpack --config webpack.prod.js"
   },
   "author": "Luis Pinheiro",
   "license": "ISC",
   "devDependencies": {
     "bootstrap": "4.0.0-beta",
     "browser-sync": "^2.18.8",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.7",
     "del": "^2.2.2",
     "devicon": "^2.0.0",
+    "file-loader": "^0.11.2",
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
@@ -25,9 +29,20 @@
     "gulp-rucksack": "^0.1.3",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
+    "html-webpack-plugin": "^2.30.1",
+    "materialize-css": "^0.100.2",
     "mdbootstrap": "^4.3.2",
+    "node-sass": "^4.5.3",
+    "resolve-url-loader": "^2.1.0",
     "run-sequence": "^1.2.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
     "t-scroll": "^1.0.7",
-    "materialize-css": "^0.100.1"
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1",
+    "webpack-merge": "^4.1.0",
+    "webpack-stream": "^4.0.0"
   }
 }

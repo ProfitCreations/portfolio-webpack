@@ -12,6 +12,7 @@ var imagemin = require("gulp-imagemin");
 var runSequence = require("run-sequence");
 var gulpif = require("gulp-if");
 var del = require("del");
+const gulpWebpack = require('webpack-stream');
 
 var dist = "./dist";
 
@@ -87,3 +88,4 @@ gulp.task("del", function() {
 gulp.task("default", function () {
   runSequence("del", "serve");
 });
+
