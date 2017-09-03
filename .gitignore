@@ -1,0 +1,11 @@
+/node_modules
+*.rar
+*.map
+*.sublime-project
+*.sublime-workspace
+*.old.html
+resume.txt
+./resume-2.html
+./yarn.lock
+./assets
+./Inspiration

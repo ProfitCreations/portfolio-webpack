@@ -1,0 +1,31 @@
+#resume {
+    .experiences-section {
+        .item{
+                border-bottom: 1px solid rgba(158, 158, 158, 0.15);
+                margin-bottom: 30px;
+                padding-bottom: 15px;
+                ul {
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                    padding-left: 20px;
+                    li {
+                        list-style-type: disc !important;
+                        p {
+                            margin-bottom: 0px !important;
+                        }
+                    }
+                }
+                .tech {
+                    ul {
+                        li {
+                            float: left !important;
+                            list-style-type: none !important;
+                            margin-left: 5px !important;
+                            font-variant: petite-caps !important;
+                        }
+                    }
+                }
+        }
+
+    }
+}
