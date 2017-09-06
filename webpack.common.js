@@ -4,14 +4,21 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-    entry: './src/js/main.js',
+    entry: {
+        index: './src/js/index.js',
+        resume: './src/js/resume.js'
+    },
 
     plugins: [
 
         new CleanWebpackPlugin(['dist']),
 
         new HtmlWebpackPlugin({
-            title: 'Portfolio | Luis Pinheiro'
+            title: 'Portfolio | Luis Pinheiro',
+            minify: {
+                collapseWhiteSpace: true
+            },
+            template: "./src/templates/index.ejs"
         }),
 
         new webpack.HotModuleReplacementPlugin()
@@ -39,7 +46,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, './dist/'),
-        filename: 'bundle.js'
+        filename: '[name].js'
     },
 
 }
